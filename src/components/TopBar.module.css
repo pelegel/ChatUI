@@ -1,0 +1,34 @@
+.appBar {
+  background-color: var(--background-paper);
+  color: var(--text-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1199;
+  height: 4rem;
+}
+
+/* ChatPLG logo */
+.appTitle {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 2rem;
+  transform: translateY(-50%);
+  margin-right: 2.5rem;
+  transition: right 0.3s ease;
+  line-height: 1;
+}
+
+/* ChatPLG logo when sidebar is expended */
+.appTitleOpen {
+  right: 19rem;
+}
+
+/* ChatPLG logo when sidebar is collapsed */
+.appTitleClosed {
+  right: 2rem;
+} 

@@ -1,0 +1,97 @@
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--background-default);
+  position: relative;
+}
+
+.mainChatArea {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  margin-top: 4rem;
+  transition: margin-right 0.3s ease;
+  margin-right: 3rem;
+}
+
+.mainChatAreaWithSidebar {
+  margin-right: 18.75rem;
+}
+
+.chatContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-right: 1rem;
+
+}
+
+/* Container for all the messages*/
+.messagesContainer {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem 5rem 2rem 5rem;   /* 5rem top, 2rem right, 5rem bottom, 5rem left */
+
+}
+
+/* Sidebar chats history and animation */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  border-radius: 0;
+  border-left: 1px solid var(--divider);
+  transition: width 0.3s ease;
+  overflow: hidden;
+  z-index: 1200;
+  background-color: var(--background-paper);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebarOpen {
+  width: 18.75rem;
+}
+
+.sidebarClosed {
+  width: 3rem;
+}
+
+.themeToggle {
+  position: fixed;
+  top: 2rem;
+  transform: translateY(-50%);
+  left: 1rem;
+  z-index: 1202;
+}
+
+.sidebarToggle {
+  position: absolute;
+  top: 2rem;
+  transform: translateY(-50%);
+  z-index: 1202;
+  left: 0.5rem;
+  transition: left 0.3s ease;
+}
+
+.sidebarClosed .sidebarToggle {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sidebarContent {
+  width: 100%;
+  flex: 1;
+  display: block;
+  overflow-y: auto;
+  padding-top: 4rem;
+}
+
+.sidebarContentCollapsed {
+  display: none;
+} 

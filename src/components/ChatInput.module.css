@@ -1,0 +1,40 @@
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  gap: 0.5rem;
+}
+
+.inputWrapperRTL {
+  flex-direction: row;    /* set the send icon on the left of the input field */
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.inputBase {
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+.inputBaseRTL {
+  text-align: right;
+}
+
+.sendIcon {
+  transform: rotate(180deg);
+}
+
+.sendButton {
+  transition: background-color 0.2s;
+}
+
+.sendButton:hover {
+  background-color: rgba(33, 150, 243, 0.1) !important;
+} 
