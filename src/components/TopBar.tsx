@@ -6,8 +6,9 @@
 import React from 'react';
 import { AppBar, Toolbar, IconButton } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import { Brightness4, Brightness7 } from '@mui/icons-material';
+import { LightMode, DarkMode } from '@mui/icons-material';
 import styles from './TopBar.module.css';
+
 
 interface TopBarProps {
   isSidebarOpen: boolean;
@@ -40,7 +41,7 @@ const TopBar: React.FC<TopBarProps> = ({ isSidebarOpen, isDarkMode, onToggleThem
           onClick={onToggleTheme}
           sx={{ color: theme.palette.text.primary }}
         >
-          {isDarkMode ? <Brightness7 /> : <Brightness4 />}
+          {isDarkMode ? <LightMode /> : <DarkMode />}
         </IconButton>
         <div className={`${styles.appTitle} ${isSidebarOpen ? styles.appTitleOpen : styles.appTitleClosed}`}>
           ChatPLG

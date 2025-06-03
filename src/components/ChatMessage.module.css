@@ -17,7 +17,6 @@
 
 .messageContainerRTL {
   direction: rtl;
-  padding: 0.5rem 0rem; 
 }
 
 .messageContainerLTR {
@@ -30,15 +29,16 @@
   padding: 0.5rem 1rem; 
   border-radius: 1rem; 
   word-wrap: break-word;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Added a subtle shadow like Paper elevation 1 */
+  /* box-shadow is provided by Paper elevation, so not strictly needed here if Paper is always used */
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
 }
 
 .messageBubbleUser {
-  background-color: var(--primary-main, #2196f3); /* Theme variable with fallback */
-  color: var(--primary-contrast-text, #ffffff); /* Theme variable with fallback */
+  background-color: var(--app-color-primary-main);
+  color: var(--app-color-primary-contrast-text);
 }
 
 .messageBubbleAssistant {
-  background-color: var(--background-default, #e0e0e0); /* Theme variable for non-user, consider --background-paper or a grey */
-  color: var(--text-primary, #000000); /* Theme variable with fallback */
+  background-color: var(--app-color-background-paper);
+  color: var(--app-color-text-primary);
 } 
